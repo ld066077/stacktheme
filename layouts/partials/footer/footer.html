@@ -25,7 +25,11 @@
         {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
     </section>
 
-    
+
+    {{- /* busuanzi plugin */ -}}
+    {{- partial "plugin/busuanzi.html" (dict "params" .Site.Params.xwi88Cfg.busuanzi "bsz_type" "footer") -}}
+
+
     <section class="powerby">
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }} <br/>
