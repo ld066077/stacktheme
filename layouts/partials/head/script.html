@@ -1,4 +1,4 @@
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 <!-- Add busuanzi -->
 {{- if .Site.Params.busuanzi.enabled -}}
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -9,8 +9,8 @@
 <script>
   $(document).ready(function () {
     var int = setInterval(fixCount, 100);
-    var busuanziSiteOffset = '{{ .Site.Params.busuanzi.site_offset }}';
-    var busuanziVisitorOffset = '{{ .Site.Params.busuanzi.visitor_offset }}';
+    var busuanziSiteOffset = {{ .Site.Params.busuanzi.site_offset | html }};
+    var busuanziVisitorOffset = {{ .Site.Params.busuanzi.visitor_offset | html }};
   function fixCount() {
     if ($("#busuanzi_container_site_pv").css("display") != "none") {
       clearInterval(int);
