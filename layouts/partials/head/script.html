@@ -15,6 +15,7 @@
       if ($("#busuanzi_container_site_pv").css("display") != "none") {
         $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + busuanziSiteOffset);
         $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + busuanziVisitorOffset);
+        setTimeout(fixCount, 100);
       }
     }
   });
