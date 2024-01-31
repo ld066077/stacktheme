@@ -28,7 +28,7 @@ notFound:
 
 widget:
     archives:
-        title:
+        title: 分类
             other: 归档
 
         more:
