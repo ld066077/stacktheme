@@ -8,9 +8,8 @@
 <script>
   $(document).ready(function () {
     var int = setInterval(fixCount, 100);
-    var busuanziSiteOffset = {{ .Site.Params.busuanzi.site_offset }
-  }
-    var busuanziVisitorOffset = {{ .Site.Params.busuanzi.visitor_offset }}
+    var busuanziSiteOffset = `{{ .Site.Params.busuanzi.site_offset }}`;
+var busuanziVisitorOffset = `{{ .Site.Params.busuanzi.visitor_offset }}`;
   function fixCount() {
     if ($("#busuanzi_container_site_pv").css("display") != "none") {
       clearInterval(int);
