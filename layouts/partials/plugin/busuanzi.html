@@ -6,13 +6,13 @@
 
     {{ if or (eq .params.site_pv true) (eq .params.site_uv true) (eq .params.page_pv true) }}
         {{ if eq .bsz_type "footer" }}
-            <section>
+            <section class="busuanzi-site">
                 {{ if eq .params.site_pv true }}
                     <span id="busuanzi_container_value_site_pv">
                         {{- with .params.page_pv_pre -}}
                             {{ . | safeHTML }}
                         {{ end }}
-                        <span id="busuanzi_value_site_pv"></span> 浏览量
+                       本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
                     </span>
                 {{ end }}
 
@@ -25,7 +25,7 @@
                         {{- with .params.site_uv_pre -}}
                             {{ . | safeHTML }}
                         {{ end }}
-                        <span id="busuanzi_value_site_uv"></span> 访客
+                        总访客数 <span id="busuanzi_value_site_uv"></span> 人
                     </span>
                 {{ end }}
             </section>
@@ -37,7 +37,7 @@
                 {{- with .params.page_pv_pre -}}
                     {{ . | safeHTML }}
                 {{ end }}
-                <span id="busuanzi_value_page_pv"></span> 浏览量&nbsp;
+                本文浏览量: <span id="busuanzi_value_page_pv"></span> 次&nbsp;
                 {{- T "views" -}}
             </span>
         {{ end }}
