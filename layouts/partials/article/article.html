@@ -3,9 +3,6 @@
 
     {{ partial "article/components/content" . }}
     
-    {{- /* busuanzi plugin */ -}}
-    {{- partial "plugin/busuanzi.html" (dict "params" .Site.Params.xwi88Cfg.busuanzi "bsz_type" "page-reading") -}}
-    
     {{ partial "article/components/footer" . }}
 
     {{ if or .Params.math .Site.Params.article.math }}
