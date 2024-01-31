@@ -5,10 +5,6 @@
     
     {{ partial "article/components/footer" . }}
 
-    # 单页面 single.html
-    {{- /* busuanzi plugin */ -}}
-    {{- partial "plugin/busuanzi.html" (dict "params" .Site.Params.xwi88Cfg.busuanzi "bsz_type" "page-reading") -}}
-
     {{ if or .Params.math .Site.Params.article.math }}
         {{ partialCached "article/components/math.html" . }}
     {{ end }}

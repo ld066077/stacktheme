@@ -16,4 +16,7 @@
         </span>
     </section>
     {{- end -}}
+    
+    {{- /* busuanzi plugin */ -}}
+    {{- partial "plugin/busuanzi.html" (dict "params" .Site.Params.xwi88Cfg.busuanzi "bsz_type" "page-reading") -}}
 </footer>
