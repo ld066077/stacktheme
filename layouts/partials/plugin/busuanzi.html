@@ -12,7 +12,7 @@
                         {{- with .params.page_pv_pre -}}
                             {{ . | safeHTML }}
                         {{ end }}
-                        <span id="busuanzi_value_site_pv"></span>
+                        <span id="busuanzi_value_site_pv"></span> 浏览量
                     </span>
                 {{ end }}
 
@@ -25,7 +25,7 @@
                         {{- with .params.site_uv_pre -}}
                             {{ . | safeHTML }}
                         {{ end }}
-                        <span id="busuanzi_value_site_uv"></span>
+                        <span id="busuanzi_value_site_uv"></span> 访客
                     </span>
                 {{ end }}
             </section>
@@ -37,7 +37,7 @@
                 {{- with .params.page_pv_pre -}}
                     {{ . | safeHTML }}
                 {{ end }}
-                <span id="busuanzi_value_page_pv"></span>&nbsp;
+                <span id="busuanzi_value_page_pv"></span> 浏览量&nbsp;
                 {{- T "views" -}}
             </span>
         {{ end }}
