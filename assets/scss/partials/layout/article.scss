@@ -82,13 +82,14 @@
                 }
             }
         }
+        
+        .busuanzi-page {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
     }
-}
 
-.busuanzi-page {
-    color: var(--accent-color);
-    font-weight: bold;
-    margin-bottom: 8px;
 }
 
 .widget--toc {
