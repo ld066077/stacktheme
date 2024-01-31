@@ -71,12 +71,6 @@
                 text-transform: unset;
             }
 
-            .busuanzi-page {
-                color: var(--accent-color);
-                font-weight: bold;
-                margin-bottom: 8px;
-            }
-
             .article-copyright,
             .article-lastmod {
                 a {
@@ -89,6 +83,12 @@
             }
         }
     }
+}
+
+.busuanzi-page {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .widget--toc {

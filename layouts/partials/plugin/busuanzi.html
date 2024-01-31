@@ -31,5 +31,17 @@
             </section>
         {{ end }}
 
+        {{/*  page pv 只在 page 显示  */}}
+        {{ if and (eq .params.page_pv true) (eq .bsz_type "page-reading") }}
+        <section class="busuanzi-page">    
+        <span id="busuanzi_container_value_page_pv">
+                {{- with .params.page_pv_pre -}}
+                    {{ . | safeHTML }}
+                {{ end }}
+                <span id="busuanzi_value_page_pv"></span>&nbsp;
+                {{- T "views" -}}
+            </span>
+        </section>
+        {{ end }}
     {{ end }}
 {{ end }}
