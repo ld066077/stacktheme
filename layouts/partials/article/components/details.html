@@ -30,7 +30,7 @@
     <footer class="article-time">
         {{ if $showDate }}
             <div>
-                {{ partial "helper/icon" "pen" }}
+                {{ partial "helper/icon" "date" }}
                 <time class="article-time--published">
                     {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
                 </time>
@@ -39,7 +39,7 @@
 
         {{ if $showReadingTime }}
             <div>
-                {{ partial "helper/icon" "san" }}
+                {{ partial "helper/icon" "clock" }}
                 <time class="article-time--reading">
                     {{ T "article.readingTime" .ReadingTime }}
                 </time>
