@@ -2,7 +2,9 @@
     {{ partial "article/components/tags" . }}
 
     {{- /* busuanzi plugin */ -}}
+    {{if .Site.Params.article.busuanziarti.enabled}}
     {{- partial "plugin/busuanzi.html" (dict "params" .Site.Params.xwi88Cfg.busuanzi "bsz_type" "page-reading") -}}
+    {{end}}
 
     {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
     <section class="article-copyright">
